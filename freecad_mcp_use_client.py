@@ -22,7 +22,7 @@ async def main(prompt: str, image_path: str):
 
     client = MCPClient.from_dict(config)
 
-    llm = ChatOpenAI(model="o3")
+    llm = ChatOpenAI(model="gpt-4.1-mini-2025-04-14")
     agent = MCPAgent(llm=llm, client=client, max_steps=30)
 
     with open(image_path, "rb") as image_file:

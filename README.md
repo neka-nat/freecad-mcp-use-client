@@ -7,5 +7,6 @@ First, you need to install FreeCAD and [FreeCAD MCP addon](https://github.com/ne
 
 
 ```bash
-uv run python freecad_mcp_use_client.py <image_path>
+uv sync
+uv run python freecad_mcp_use_client.py --image_path <image_path>
 ```
